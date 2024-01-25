@@ -2,15 +2,14 @@
 
 namespace App\Models;
 
-use App\Traits\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Property extends Model
 {
-    use HasFactory, Filterable;
+    use HasFactory;
 
-    public function attachedProperties()
+    public function propertiesValue()
     {
         return $this->hasMany(ProductProperties::class);
     }
