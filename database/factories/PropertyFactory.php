@@ -14,7 +14,7 @@ class PropertyFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->regexify('[a-z]{3,10}'),
+            'name' => $this->faker->regexify('prop-[a-z]{1,5}')
         ];
     }
 }
